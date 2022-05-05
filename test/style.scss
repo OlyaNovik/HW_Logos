@@ -41,8 +41,6 @@ svg{
 }
 .header_block{
     display: block;
-    // align-items: center;
-    // max-width: 1440px;
     width:100%;
     min-height:750px;
     background-image: url('../test/image/bitmap.png'),url('../test/image/Mask.png');
@@ -117,7 +115,6 @@ main{
     &__foto_with_text{
         margin-top: 61px;
         max-width: 940px;
-        // height: 400px;
         display: flex;
         justify-content: space-between;
         @include font_text(white,14px,400,'Montserrat' );
@@ -174,7 +171,6 @@ main{
         margin-top: 50px;
          height: 300px;
         display: flex;
-        // justify-content: space-around;
         .albom{
             display: flex;
         }
@@ -193,10 +189,6 @@ main{
             position: relative;
             &__mtext{
                 @include font_text(black,14px,400,'Montserrat');
-                // display: flex;
-                // flex-direction: column;
-                // justify-content: center;
-                // align-items: center;
             }
             .svg_card{
                 @include svg_font($color_button)
@@ -213,7 +205,6 @@ main{
         }
     }
     &__pbutton{
-        // margin-top: 50px;
         display: flex;
         justify-content: center ;
         button{
