@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(245, 233, 125);
+}
+.items {
+    margin-top: 15%;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+.web {
+    background-color: rgb(0, 213, 255);
+    height: 200px;
+    width: 100px;
+    outline: 1px solid rgb(0, 185, 222);
+    transition: 0.5s;
+    display: flex;
+
+}
+.web1 {
+    background-color: white;
+    height:200px ;
+    width: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+p  {
+    width: 500px;
+    height: 200px;
+    // margin: 5px 15px;
+}
+h1 {
+    margin: 35px 0px 15px 15px;
+}
+// .pic {
+//     margin: 0px auto;
+//     width: 50px;
+//     fill: white;
+// }
+
+.media {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    overflow: hidden;
+    
+}
+.icon1 {
+    background-color: rgb(0, 213, 255);
+    width: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+
+}
+.icon2 {
+    background-color: red;
+    width: 100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+svg{
+    width: 50px;
+    height: 50px;
+}
+.black {
+    fill: white;
+    width: 100px;
+}
+.white {
+    fill: white;
+    width: 100px;
+}
+.web:hover .icon1 {
+    transform: translateX(-100px);
+    transition: 0.5s;
+}
+.web:hover .icon2 {
+    transform: translateX(-100px);
+    transition: 0.5s;
+}
+.web:hover .web1  {
+    transition: 0.5s;
+    width: 500px;
+    height: 200px;
+}
+.web:hover {
+    transition: 0.5s;
+    width: 600px;
+    height: 200px;
+    background-color: green;
+}
+.twit{
+    background-color: rgb(119, 232, 255);
+}
+.face{
+    background: rgb(21,117,238);
+    background: linear-gradient(360deg, rgba(21,117,238,1) 0%, rgba(4,18,93,1) 59%);}
+.lin{
+    background: rgb(65,113,213);
+    background: radial-gradient(circle, rgba(65,113,213,1) 10%, rgba(28,85,195,1) 71%);}
+.inst{
+    background: rgb(102,195,97);
+    background: radial-gradient(circle, rgba(102,195,97,1) 10%, rgba(16,102,0,1) 71%);
+}
+.yout{
+background-color: rgb(185, 2, 2);
+}
+.tumb{
+    background: rgb(33,116,221);
+    background: linear-gradient(360deg, rgba(33,116,221,1) 0%, rgba(7,35,179,1) 59%);}
+.dribl{
+    background: rgb(231,178,192);
+background: linear-gradient(360deg, rgba(231,178,192,1) 0%, rgba(252,70,107,1) 59%);
+}

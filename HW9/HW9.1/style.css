@@ -1,0 +1,45 @@
+body {
+  background-color: #35c1c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.circle {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 350px;
+  -webkit-animation: an_circle 2s infinite;
+          animation: an_circle 2s infinite;
+}
+
+@-webkit-keyframes an_circle {
+  50% {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  100% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+
+@keyframes an_circle {
+  50% {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  100% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

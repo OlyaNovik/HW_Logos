@@ -1,0 +1,54 @@
+body {
+background-image: url(image/back.jpg);
+}
+.container {
+position: relative;
+}
+.earth {
+    width: 250px;
+    position: absolute;
+    top: 195px;
+    left: 635px;
+}
+.earth_up{
+    z-index: 1;
+    width: 250px;
+    position: absolute;
+    top: 195px;
+    left: 635px;
+}
+.moon {
+    z-index: 2;
+    width: 50px;
+    position: absolute;
+    top: 60px;  
+}
+
+.orbita{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+    outline: 2px solid gray;
+    transform: rotateX(-75deg);
+    animation: rotate_orbit 8s linear infinite;
+}
+.rotation{
+    position: absolute;
+    top: 130px;
+    left:560px;
+    transform: rotateX(-75deg);
+}
+@keyframes rotate_orbit {
+    0%{
+      transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+    
+}

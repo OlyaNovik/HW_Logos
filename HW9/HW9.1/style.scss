@@ -1,0 +1,25 @@
+
+body{
+    background-color: rgb(53, 193, 193);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.circle{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 350px;
+    animation: an_circle 2s infinite;
+}
+@keyframes an_circle {
+    50% {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+    100%{
+        transform: rotate(720deg);
+    }
+}
