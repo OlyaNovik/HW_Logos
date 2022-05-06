@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Kanit:wght@100&family=Nanum+Gothic&family=Poppins:wght@100&family=Rajdhani:wght@300&family=Send+Flowers&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@mixin text_font($font_size,$color,$font_weight){
+    font-size: $font_size;
+    color:$color;
+    font-family: 'Kanit';
+    font-weight: $font_weight;
+}
+@mixin button_font($width,$height,) {
+    @include text_font(15px,white,300);
+    background-color: black;
+    width: $width;
+    height: $height;
+    cursor: pointer;
+}
+
+
+// @media(max-width:320px){
+
+//     .header_container{
+//         max-width: none;
+//         display: block;
+//     }
+//     .container{
+//         max-width: none;
+//     }
+//     .subscribe_foto{
+//         max-width: none;
+//     }
+// }
+p{
+    margin: 0;
+}
+// 
+// .header_cont{
+//     max-width: 2560px;
+// }
+header {
+    // max-width: 2560px;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(237, 237, 237);
+    align-items: center;
+    display:flex;
+    justify-content: center;  
+    position: relative; 
+}
+
+.image_menu{
+    margin-left: 30px;
+    position: absolute;
+    left: 0;
+}
+
+.suffix{
+    position: relative;
+}
+.appeared{
+    height: 359px;
+    width: 344px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 52px 0px 52px 66px;
+    text-decoration: underline;
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    @include text_font(20px,black,500);
+    visibility: hidden; 
+}  
+.menu:hover .appeared{
+    visibility: visible;
+    cursor: pointer;
+}
+
+// 2part
+.header_container{
+    display: flex;
+    max-width: 1440px;
+}
+.img_one{
+    width: 50%;
+    height: 570px;
+}
+.black_block{
+    width: 50%;
+    height: 570px;
+    background-color: black;
+    @include text_font(15px,white,300);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text_head{
+    display:flex;
+    justify-content: space-between;
+    line-height: 70px;
+    // margin: 0px 100px 30px 100px;
+}
+.title{
+    @include text_font(30px,white,800);
+    // line-height: 100px;
+}
+.read_button{
+    border: 3px solid gray;
+    margin-top: 30px;
+    @include button_font(250px,70px)
+}
+.text_middle{
+    margin: 30px 100px 0px 100px;
+}
+
+@media(max-width:1261px){
+
+    .header_container{
+        max-width: 1261px;
+    }
+    .container{
+        max-width: 1261px;
+    }
+    .subscribe_foto{
+        max-width: 1261px;
+    }
+    .albom{
+        width: 295px;
+        height: 195px;
+    }
+    .man_one{
+        height: 301px;
+    }
+    .man_two{
+        height: 301px;
+    }
+}
+@media(max-width:1070px){
+
+    .header_container{
+        max-width: 1070px;
+    }
+    .container{
+        max-width:1070px;
+    }
+    .subscribe_foto{
+        max-width:1070px;
+    }
+    .albom{
+        width: 265px;
+        height: 145px;
+    }
+    .man_one{
+        height: 281px;
+    }
+    .man_two{
+        height: 281px;
+    }
+}
+@media(max-width:960px){
+
+    .header_container{
+        max-width: 960px;
+    }
+    .container{
+        max-width: 960px;
+    }
+    .subscribe_foto{
+        max-width: 960px;
+    }
+    .albom{
+        width: 235px;
+        height: 155px;
+    }
+    .man_one{
+        height: 205px;
+    }
+    .man_two{
+        height: 205px;
+    }
+}
+
+// 3part
+.container{
+    max-width: 1440px;
+}
+.man_foto{
+    display: flex;
+    margin-top: 40px;
+    @include text_font(15px,black,800)
+    }
+.man_one{
+        width: 100%;
+        // height: 368px;
+    //    margin: 0px 100px 0px 100px;
+    }
+.man_two{
+       @extend .man_one;
+    //    margin-left: 50px;
+    }
+.img_foto{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 100px 0px 100px;
+    }
+.featured{
+        margin: 50px 0px 0px 100px;
+        @include text_font(15px,black,800);
+    }
+    
+.mini_title{
+    @include text_font(20px,black,800 );
+    line-height: 50px;
+}
+
+// 4part
+.three_foto{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 100px 0 100px;
+    // margin-top: 80px;
+    // margin-left: 100px;
+    // margin-right: 100px;
+}
+.albom{
+    height: 240px;
+}
+.img_foto2{
+    @include text_font(15px,black,800);
+}
+// 5part
+.button_block{
+    display: flex;
+    justify-content: center;
+
+}
+.see_butt{
+    margin-top: 20px;
+@include button_font(250px,35px )
+}
+
+// 6part
+.subscribe_foto{
+    max-width: 1440px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    &.text{
+        @include text_font(40px,white,800);
+    }
+}
+.two_bl{
+    width: 50%;
+    height: 360px;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.book_two{
+    width: 50%;
+    height: 360px;
+}
+.subs_button{
+    @include button_font(250px,40px );
+    border: 3px solid gray;
+    margin-top: 20px;
+}
+
+.sevnpart{
+    margin-top: 0px;
+}
+.featured.inter{
+    margin-left: 100px;
+    margin-bottom: -30px;
+}
+
+footer {
+    margin-top: 80px;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.designed_by {
+    margin-top: 20px;
+    font-size: 10px;
+    color: white;
+}
+
+@media(max-width:774px){
+    .header_container{
+        max-width: 774px;
+        display: block;
+    }
+    .container{
+        max-width: none;
+    }
+    .subscribe_foto{
+        max-width: none;
+        display: block;
+        margin: 50px 0 20px 0px;
+    }
+    .book_two{
+        width: 774px;
+    }
+    .two_bl{
+        width: 770px;
+    }
+    .man_foto{
+        display: block;
+    }
+    .three_foto{
+        display: block;
+    }
+    .img_one{
+        width: 774px;
+        // margin:50px 20px 50px 20px;
+    }
+    .black_block{
+        width: 770px;
+    }
+    .adapt{
+        width: 100%;
+        height: 100%;
+      
+    }
+    header{
+        min-width: 775px;
+    }
+    footer{
+        min-width: 775px;
+    }
+    .appeared{
+        height: 160px;
+        width: 120px; 
+        padding-top: 5px;
+        padding-left: 30px;
+    }
+}

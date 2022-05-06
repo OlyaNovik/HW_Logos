@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "bahij-sultannahia";
+    src:url("fonts/bahij-sultannahia.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+header{
+    width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+.text{
+    margin: 30px 70px;
+    font-size: 30px;
+    font-family: "bahij-sultannahia";
+}
+a{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+}
+
+a:hover{
+    color: rgb(6, 125, 222);   
+
+
+}
+.text-mine{
+    color: rgb(6, 125, 222);  
+}
+.Main{
+    width: 1400px;
+    height: 650px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgb(213, 211, 211);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+input{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: 1px solid white;
+
+}
+.link{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid black;
+    /* display: flex;
+    justify-content:center;
+    align-items: flex-end;
+    margin-right: 0;
+     */
+     margin-right: 0;
+    }
+ .load{
+        width: 25px;
+        height: 25px;
+        fill: black;
+      
+    }
+.load:hover{
+        fill:white;
+    }
+    
+.link:hover{
+        background-color:rgb(6, 125, 222); 
+    }
+
+table{
+    width: 900px;
+    height: 400px;
+    text-align: center;
+    font-family: "bahij-sultannahia";
+   
+
+}
+tr:hover{
+    background-color: white; 
+   
+}
+th{
+    font-size: 24px;
+    background-color:rgb(213, 211, 211) ;
+ 
+}
+tr{
+    font-size: 20px;
+
+}
+td.first-border{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+td.second-border{
+ display: flex;
+justify-content: center;
+margin-top: 15px;
+border-top-right-radius: 40px;
+border-bottom-right-radius: 40px;
+
+}
+/* .table{
+    width: 1200px;
+    height: 550px;
+    font-family: "bahij-sultannahia";
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.rad{
+    width: 1000px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.rad.first:hover{
+background-color: rgb(213, 211, 211);
+}
+.rad:hover{
+    background-color: white;
+    border-radius: 20px;
+}
+
+.link{
+width: 35px;
+height: 35px;
+border-radius: 10px;
+border: 2px solid black;
+display: flex;
+justify-content:center;
+align-items: flex-end;
+
+}
+.load{
+    width: 25px;
+    height: 25px;
+    fill: black;
+  
+}
+.load:hover{
+    fill:white;
+}
+.link:hover{
+    background-color:rgb(6, 125, 222); 
+}
+input{
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+
+} */
+/* table{
+    width: 1000px;
+    height:450px;
+    border-spacing: 0px;
+    border-radius: 60px;
+    
+}
+
+td{
+    text-align: center;
+    border-radius: 60px;
+}
+tr:hover{
+    background-color: white;
+    border-radius: 60px;
+} */

@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "bahij-sultannahia";
+    src:url("fonts/bahij-sultannahia.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+header{
+    width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+.text{
+    margin: 30px 70px;
+    font-size: 30px;
+    font-family: "bahij-sultannahia";
+}
+a{
+    text-decoration: none;
+    color: rgb(31, 30, 30);
+}
+
+a:hover{
+    color: rgb(6, 125, 222);   
+
+
+}
+.team{
+    color: rgb(6, 125, 222);
+}
+
+.Main{
+    width: 1400px;
+    height: 650px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgb(213, 211, 211);
+    border-radius: 40px;
+    display:flex ;
+    flex-direction: column;
+    align-content: center;
+
+}
+ 
+.block{
+    width: 1400px;
+    height: 250px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-around;
+}
+.foto{
+    width: 260px;
+    height: 270px;
+    margin: 10px;
+    margin-top: 0;
+    background-color: white;  
+    border-radius: 40px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    
+}
+.foto:hover{
+    background-color:rgb(6, 125, 222);
+    color: white;
+
+}
+img{
+    margin: 20px;
+    width:100px;
+    height: 100px;
+    border-radius: 90px;
+}
+p{
+    font-family: "bahij-sultannahia";
+    line-height: 10px;
+    font-size: 25px;
+    margin: 0;
+}
+.date{
+    font-size: 20px;
+    color: silver;
+    line-height: 40px;
+}
+
+
+/* 2 завдання */
+
+.trash{
+    display: none;
+    position: absolute;
+    bottom: 240px; /* Положение от нижнего края */
+    right: -20px; /* Положение от правого края */
+    border-radius: 15px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.trash-img{
+    width: 35px;
+    height: 35px;
+    fill: rgb(6, 125, 222);
+    
+ 
+}
+.foto:hover .trash{
+display: flex;
+
+
+}
+
