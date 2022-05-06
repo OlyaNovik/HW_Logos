@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Nanum+Gothic&family=Poppins:wght@100&family=Rajdhani:wght@300&family=Send+Flowers&display=swap');
+.header{
+    width: auto;
+    height: 70px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 8px rgb(109, 106, 106);
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Container{
+    width: auto;
+    height: 2000px;
+    background-color: rgb(167, 167, 167);
+    margin: 0;
+}
+p{
+    font-size: 21px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+.CSS{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+.text.work{
+    width: 150px;
+    transition: 1s;
+}
+.text{
+  width: 100px;
+    transition: 1s;
+}
+.text.Contact{
+    width: 120px;
+    transition: 1s;
+}
+.text:hover{
+    background-color: silver;
+    transition: 2s;
+}

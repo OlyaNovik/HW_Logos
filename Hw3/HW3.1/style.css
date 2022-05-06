@@ -1,0 +1,29 @@
+
+.block-first{
+    outline: 2px dashed red ;
+    margin: 10px auto;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(95, 176, 205);
+}
+.block-second{
+    outline: 2px dotted red ;
+    margin: 10px auto;
+    width: 300px;
+    height: 150px;
+    background-color: yellow;
+}
+.block-third{
+    border: 20px inset blue;
+    margin: 10px auto;
+    width: 300px;
+    height: 150px;
+background-color: rgb(95, 176, 205);
+}
+.block-fourth{
+    border-left: 10px solid black;
+    margin: 10px auto;
+    width: 300px;
+    height: 150px;
+  background-color:   rgb(95, 176, 205);
+}

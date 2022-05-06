@@ -1,0 +1,252 @@
+.block{
+    width: 1000px;
+    height: 1200px;
+    outline: 3px solid black;
+    background-color: silver;
+    margin: 50px;
+}
+.header{
+    width: 850px;
+    height: 160px;
+    background-color: blanchedalmond;
+    padding-top:  50px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+}
+
+.header-site{
+    width: 500px;
+    height: 90px;
+    background-color: rgb(165, 136, 103);
+    padding-top:  30px;
+    padding-bottom: 30px;
+    padding-left: 190px;
+}
+.site{
+    width: 300px;
+    background-color: rgb(249, 244, 237);
+    height: 90px;
+    text-align: center;
+    
+}
+p{
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+.menu{
+    width: 200px;
+    height: 200px;
+    float: left;
+    text-align: center;
+    
+}
+.one{
+    background-color: rgb(59, 136, 136);
+}
+.two{
+    background-color: rgb(149, 167, 208);
+}
+.three{
+    background-color: rgb(226, 213, 196);
+}
+.four{
+    background-color: rgb(189, 86, 102);
+}
+.five{
+    background-color: rgb(61, 61, 115);
+    
+}
+.container{
+    float: left;
+}
+.green{
+    height: 550px;
+    width: 290px;
+    background-color: green;
+    padding-left: 80px;
+    padding-top: 20px;
+    clear: both;
+
+}
+.text{
+    width: 200px;
+    height: 150px;
+    background-color: grey;
+    text-align: center;
+}
+.redbox{
+    width: 150px;
+    height: 120px;
+    background-color: brown;
+    margin: 25px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.pinkbox{
+    width: 75px;
+    height: 255px;
+    background-color: pink;
+  margin-left: 26px;
+  float: left;
+}
+.pinkbox.another{
+margin-left: 0;
+background-color: rgb(218, 193, 82);
+}
+.boxA{
+    width: 300px;
+    height: 80px;
+    background-color: rgb(89, 173, 180);
+    text-align: center;
+}
+.boxB{
+width: 100px;
+height: 490px;
+background-color: aqua;
+
+}
+.boxB1{
+    width: 50px;
+    height: 380px;
+    float: left;
+    
+}
+.boxB1.B2{
+    width: 50px;
+    height: 195px;
+    background-color: rgb(236, 224, 88);
+    margin-top: 261px;
+}
+
+.boxB1.B1{
+background-color: brown;
+margin-top: 76px;
+}
+.column{
+    float: left;
+}
+.boxC1{
+width: 100px;
+height: 122px;
+background-color: rgb(106, 106, 210);
+}
+.boxC2{
+    width: 100px;
+    height: 122px;
+    background-color: rgb(13, 13, 107); 
+}
+.boxC3{
+    width: 100px;
+    height: 122px;
+    background-color: rgb(77, 3, 87); 
+}
+.boxC4{
+    width: 50px;
+    height: 123px;
+    background-color: wheat;
+    float: left;
+}
+.boxC4.C5{
+    background-color: rgb(201, 73, 129);
+}
+.boxD1{
+    width: 100px;
+    height: 122px;
+    background-color: rgb(25, 168, 183);
+    }
+.boxD2{
+        width: 100px;
+        height: 122px;
+        background-color: rgb(34, 96, 116); 
+    }
+.boxD3{
+        width: 100px;
+        height: 245px;
+        background-color: rgb(230, 216, 181);
+        text-align: center; 
+    }
+
+.number{
+    float: left;
+    width: 110px;
+    height: 80px;
+    text-align: center;
+}
+.number.None{
+    background-color: rgb(69, 129, 69);
+}
+.number.Ntwo{
+    background-color: rgb(182, 53, 174);
+}
+.number.Nthree{
+background-color: rgb(179, 103, 5);
+}
+.block1{
+    width: 240px;
+    height: 80px;
+    background-color: rgb(230, 189, 151);
+    clear: both;
+    padding-top: 50px;
+    padding-left: 90px;
+}
+.blockred{
+    width: 110px;
+    height: 10px;
+    background-color: red;  
+    padding-top:40px;
+    padding-left:50px;
+}
+.blockblack{
+    width: 50px;
+    height: 10px;
+    background-color: rgb(8, 7, 7); 
+}
+
+.blockNfive{
+    width: 330px;
+    height: 100px;
+    background-color: rgb(88, 177, 162);
+    text-align: center;
+}
+.blockNseven{
+width: 100px;
+height: 260px;
+background-color: rgb(33, 74, 61);
+float: left;
+}
+.blockNseven.eight{
+text-align: center;
+width: 230px;
+height: 220px;
+background-color: rgb(97, 125, 116);
+padding-top: 40px;
+}
+.blocknine{
+    width: 115px;
+    height: 120px;
+    background-color: blueviolet;
+    float: left;
+}
+.blocknine.ten{
+    width: 115px;
+    height: 120px;
+    background-color: wheat;
+}
+.blockNeleven{
+    width: 230px;
+    height: 185px;
+    background-color: rgb(156, 51, 156);
+}
+.footer{
+    height:173px;
+    width: 1000px;
+    background-color: rgb(92, 84, 84);
+    clear: both;
+    text-align: center;
+}
+
+img{
+    width: 90px;
+    height: 100px;
+}
