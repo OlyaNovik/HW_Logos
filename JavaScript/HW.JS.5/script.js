@@ -44,34 +44,31 @@ Marker.addEventListener('change',(event)=>{
     const value = Marker.value;
     list.style.listStyleType=value;
 })
-// let link= document.getElementsByTagName('a');
-// let line=document.getElementsByTagName('p')
-// if(line.item){
 
-// }
-// if(window.location.href){
-//     let backParag=document.querySelector('p');
-//     backParag.style.background='red';
-// }
-// if(document.getElementsByClassName('.linka')){
-//        document.body.style.background='red';
+let ColorLine= document.querySelector('.color_line');
+let ColorText= document.querySelector('.color_text');
+let liner =document.getElementsByTagName('p');
+let link = document.getElementsByTagName('a');
 
-// }
+ColorLine.addEventListener('keyup',(event)=>{
+    const value = event.target.value;
+    for( let i=0;i<liner.length;i++){
+        if(liner[i].innerHTML.search('href') != -1){
+         liner[i].style.background=value;
+        }
+    }
+})
+ColorText.addEventListener('keyup',(event)=>{
+    const value = event.target.value;
+    for( let i=0;i<liner.length;i++){
+        if(liner[i].innerHTML.search('href') != -1){
+         liner[i].style.color=value;
+         for( let i=0;i<link.length;i++){
+           link[i].style.color=value;
+        }
+        }
+       
+    }
+})
 
-// for (let elem of document.getElementsByTagName("p").children) {
-//     if (elem.matches('a[href$="com"]')) {
-//       console.log("Ссылка на архив: " + elem.href );
-//     }
-//   }
-//   for (let elem of document.body.children) {
-//    if (elem.matches('a[href$="com"]')) {
-//         alert("Ссылка на архив: " + elem.href );
-//       }
-//   }
-// function nnn(){
-// let paragraf = document.querySelector("p");
-//     console.log('Done');
-//     paragraf.querySelector('a').style.background='green';
-// }
 
-// nnn();
