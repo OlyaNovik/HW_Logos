@@ -14,6 +14,14 @@ header{
     background-repeat: no-repeat;
     width: 100%;
     height: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @mixin font_text($color,$size,$weight) {
     color: $color;
@@ -82,12 +90,21 @@ header{
     background-color:#FFFAF2;
     width: 100%;
     margin: 70px 100px 60px 0px;
+    padding-top:40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
     @include font_text(black,24px,700 );
             img{
             width: 300px;
             }
+            &__together{
+                display: flex;
+                flex-direction: column;
+            }
     &__tablle{
         display: flex;
+        margin-top: 40px;
     }
     &__img_and_text{
         display: flex;
@@ -164,9 +181,12 @@ header{
              margin: 20px;
          }
         }
-        // &__group2{
-        //     float: left;
-        // }
+        &__group2{
+           margin-top: 20px;
+           img{
+               margin-bottom: 40px;
+           }
+        }
     }
     &__arrow{
         svg{
@@ -214,7 +234,92 @@ footer{
 
 
 
-
+@media screen and (max-width:780px) {
+    .contaainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__head{
+            margin: 0;
+            margin-top: 30px;
+        }
+        &__main{
+            margin-top: 30px;
+            margin: 0;
+            // display: flex;
+            // justify-content: center;
+            @include font_text(white,38px,400 );
+        &__minitext{
+            margin: 0;
+                    }
+        }
+    }
+    .main-container{
+        width: 780px;
+    }
+    .yellow_block{
+        display: flex;
+        flex-direction: column;
+    &__skillstext{
+        text-align: center;
+        }
+    &__img{
+        display: flex;
+        justify-content: center;
+    }
+    &__skils{
+        margin-left: 100px;
+    }
+    &__status{
+        margin-left: 50px;
+    }
+}
+.Portfolio_block{
+    margin: 70px 100px 60px 100px;
+    @include font_text(black,18px,400 );
+       &__headtext{
+       @include font_text(black,24px,700 );
+       margin-bottom: 50px;
+       }
+       &__textt_and_img{
+        display: flex;
+        }
+        &__maintext{
+        width: 780px;
+           .text_research{
+            margin-bottom: 50px;
+            @include font_text(black,18px,600 );
+        }
+       }
+       &__img_port{
+           width: 635px;
+           display: flex;
+           margin-top: 65px; 
+           margin-left: 230px; 
+           &__group1{
+               width: 770px;
+               margin-right: 30px;
+            img{
+                margin: 20px;
+            }
+           }
+           &__group2{
+              margin-top: 20px;
+              img{
+                  margin-bottom: 40px;
+              }
+           }
+       }
+       &__arrow{
+           svg{
+               width: 70px;
+               height: 25px;
+           }
+       }
+   }
+}
 
 
 
@@ -249,9 +354,12 @@ header{
 .contaainer__head__main{
     display: none;
 }
-
+.main-container{
+    width: 360px;
+}
 .white_block{
     margin: 20px;
+    width: 340px;
     &__about{
         display: flex;
         justify-content: center;
@@ -261,6 +369,8 @@ header{
 // Skills
 
 .yellow_block{
+    display: flex;
+    flex-direction: column;
     &__img{
         margin-left: 40px;
     }

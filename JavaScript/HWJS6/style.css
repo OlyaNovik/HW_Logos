@@ -1,0 +1,35 @@
+/* .block{
+    width: 100px;
+    height: 100px;
+    outline: 1px solid black;
+    margin: 100px auto;
+} */
+body{
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /* background-image: url(https://i.pinimg.com/736x/70/5b/bb/705bbb820c7332b04d619f7536645753.jpg); */
+}
+/* .bl{
+width: 300px;
+height: 200px;
+outline: 2px solid black;
+margin:30px ;
+} */
+.div {
+    margin-top: 200px;
+    outline: 2px solid black;
+    width: 400px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sicret {
+    background-color: blueviolet;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
