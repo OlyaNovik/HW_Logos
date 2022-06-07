@@ -1,5 +1,14 @@
 ///TEXT
-
+// Variant 1
+// let colorM=['red','yellow','green','blue','orange','gray'];
+// let line = document.getElementsByTagName('li');
+// console.log(line);
+// for(let i=0;i<=line.length;i++){
+// line[i].addEventListener('click', ()=>{  
+//              line[i].style.color=colorM[i];
+//     })
+// }
+// Variant 2
 // let red= document.querySelector('#red');
 // red.addEventListener('click', ()=>{
 //         red.style.color='red';
@@ -31,7 +40,7 @@
     
 // })
 
-//EX1
+//ex1
 
 
 // let box = document.querySelector('.block');
