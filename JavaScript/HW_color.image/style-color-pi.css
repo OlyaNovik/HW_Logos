@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wrapper {
+    margin-top: 100px;
+}
+.colorBlocks {
+    display: none;
+    grid-template-columns: 120px 120px 120px;
+    height: fit-content;
+    width: fit-content;
+}
+.pictures {
+    display: none;
+    grid-template-columns: 120px 120px 120px;
+    height: fit-content;
+    width: fit-content;
+}
+.block, .block2 {
+    height: 80px;
+    width: 120px;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.aqua {
+    background: aqua;
+}
+.brown {
+    background:brown;
+}
+.green {
+    background: green;
+}
+.lightgreen {
+    background: lightgreen;
+}
+.gray {
+    background: gray;
+}
+.red {
+    background: red;
+}
+.blue {
+    background: blue;
+}
+.blueviolet {
+    background: blueviolet;
+}
+.olive {
+    background: olive;
+}
+.img1 {
+    background-image: url(https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGljfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+}
+.img2 {
+    background-image: url(https://images.unsplash.com/photo-1527960669566-f882ba85a4c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YXdlc29tZSUyMHBpY3xlbnwwfHwwfHw%3D&w=1000&q=80);
+}
+.img3 {
+    background-image: url(https://www.myfitness.ee/wp-content/uploads/2016/05/nature-wallpaper-07.jpg);
+}
+.img4 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg);
+}
+.img5 {
+    background-image: url(https://sferaglass.com/storage/images/ZCyNe6QvEf.jpeg);
+}
+.img6 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJrsnfxCeHArU4QxIxYLVcx69EjchHCEtmUQ&usqp=CAU);    
+}
+.img7 {
+    background-image: url(https://production-wordpress.unep-wcmc.org/content//uploads/2021/11/AdobeStock_291451528-1-scaled.jpeg);
+}
+.img8 {
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/279314888.jpg?k=634792d1c74f7c16f71502c6e4f2dd83e56c5745965ea94c3205046ca4736217&o=&hp=1);
+}
+.img9 {
+    background-image: url(https://cdn.futura-sciences.com/buildsv6/images/wide1920/1/f/3/1f3a0c73fe_50143651_496.jpg);
+}
