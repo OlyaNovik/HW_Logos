@@ -124,8 +124,8 @@ input.addEventListener('keyup', (event)=>{
     
 })
 
-input.addEventListener('keydown', (event)=>{
-    let i = event.keyCode;
-    console.log(i);
-})
+// input.addEventListener('keydown', (event)=>{
+//     let i = event.keyCode;
+//     console.log(i);
+// })
 
