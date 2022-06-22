@@ -71,4 +71,9 @@ ColorText.addEventListener('keyup',(event)=>{
     }
 })
 
+// // let linkCreate =prompt('Enter link');
+// let site = document.querySelectorAll('.linka');
+// console.log(site);
+// console.log(liner.innerHTML);
+
 
