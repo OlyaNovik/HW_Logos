@@ -1,0 +1,185 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-block {
+  color: #666666;
+  width: 440px;
+  height: 450;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  outline: 2px solid darkgray;
+  border-radius: 5px;
+}
+
+.form1 {
+  padding: 0px 20px 20px 20px;
+}
+
+input {
+  width: 390px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+select {
+  width: 400px;
+  height: 20px;
+}
+
+h3 {
+  color: white;
+}
+
+#btn {
+  width: 400px;
+  height: 30px;
+  background-color: #4f9b4f;
+  border: 0px;
+  border-radius: 7px;
+  color: white;
+}
+
+.radio {
+  width: 20px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.block-radio {
+  width: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#check {
+  width: 20px;
+  margin: 0;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.block-agr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.title {
+  text-align: center;
+  background-color: #4f9b4f;
+}
+
+.register-form {
+  margin-top: 50px;
+  width: 400px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  outline: 2px solid darkgrey;
+  border-radius: 5px;
+}
+
+.register-form .form2 {
+  height: 250px;
+}
+
+.register-form .field {
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.register-form .field p {
+  margin: 15px 0 0 0;
+}
+
+.register-form .btn-out {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register-form .btn-out .btnOut {
+  margin-top: 5px;
+  border: 2px solid #4f9b4f;
+  width: 100px;
+  height: 40px;
+  color: #4f9b4f;
+  font-weight: 700;
+}
+
+.register-form .man-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 8px solid white;
+  background-color: #a39cd6;
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+}
+
+.register-form .woman-img {
+  display: none;
+}
+
+.register-form .header-out {
+  position: relative;
+  height: 100px;
+  background-color: #4f9b4f;
+}
+
+.register-form .footer-out {
+  background-color: #4f9b4f;
+  height: 50px;
+}
+/*# sourceMappingURL=style.css.map */

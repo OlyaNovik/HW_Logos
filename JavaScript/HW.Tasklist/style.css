@@ -1,0 +1,57 @@
+body{
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(136, 135, 135, 0.789);
+}
+.notebook{
+    width: 1200px;
+    height: 800px;
+    border: 25px solid rgb(14, 148, 97) ;
+    border-radius: 35px;
+    outline: 1px solid white;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;   
+}
+.line{
+    width: 6px;
+    height: 800px;
+    background: rgb(14, 148, 97) ;
+    margin-left: 600px;
+    position: fixed;
+}
+.task1{
+    width: 600px;
+    height: 800px;
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+}
+.task2{
+    width: 600px;
+    height: 800px;
+
+}
+h2{
+    margin: 20px 0 0 200px;
+ }
+.enter{
+    width: 250px;
+    margin: 30px 0 0 170px;
+    border: none;
+    border-bottom: 3px solid black;
+}
+.enter:focus{
+    outline: none;
+    border-bottom: 3px solid black;
+
+}
+.check{
+    width: 20px;
+    height: 20px;
+    margin: 30px 0 0 50px;
+}

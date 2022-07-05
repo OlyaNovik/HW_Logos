@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SignUp.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form name="SignUp" action="">
+        <header>Create your accaunt</header>
+        <wrapper class="wrapper2">
+        <p>Fitst name</p>
+        <input name="name" type="text" placeholder="Ім'я" >
+        <p>Second name</p>
+        <input name="surname" type="text" placeholder="Прізвище">
+        <p>Email address</p>
+        <input name="email" type="text" placeholder="@пошта">
+        <div class="male_female">
+            <input class="sex" type="radio" name="sex" id="" value="Man">Man
+            <input class="sex" type="radio" name="sex" id="" value="Woman">Woman
+        </div>
+        <p>Position</p>
+        <select name="position" >
+            <option value="ChoosePosition">Choose position</option>
+            <option value="FrontEnd">FrontEnd</option>
+            <option value="BackEnd">BackEnd</option>
+            <option value="QC/QA">QC/QA</option>
+        </select>
+        <div class="agreeP"><input name="agree" class="agree" type="checkbox">
+        <p>I agree all statements in Terms of service</p></div>
+        <input name="btn_signUp" class="input_button" type="button" value="Sing Up" disabled="true"></wrapper></form>
+    </div>
+
+    <div class="wraper3">
+
+
+    <div class="header"></div>
+    <div class="information">
+        <img class="img_man" src="https://banner2.cleanpng.com/20180629/hck/kisspng-businessperson-computer-icons-woman-business-man-icon-5b35f546d0c3f1.3317101615302628548551.jpg" alt="">
+        <img class="img_woman"src="https://w7.pngwing.com/pngs/312/334/png-transparent-business-real-estate-woman-computer-icons-person-business-hat-people-apartment.png" alt="">
+        <p class="nameAndSurnameOUT">NAME + SURNAME</p>
+        <p class="EmailOUT">Email address</p>
+        <p class="positionOUT">Position</p>
+    </div>
+    <input name="btn_signOut" class="SignOut" type="button" value="Sing Out">
+    <div class="footer"></div>
+</div>
+
+
+    <script src="SignUp.js"></script>
+</body>
+</html>

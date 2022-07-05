@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="marg_text">
+        <form name="form_text" class="form_text" >
+        
+            <p >Lorem ipsum dolor sit amet.</p>
+            <p >Lorem ipsum dolor sit amet.</p>
+            <p >Lorem ipsum dolor sit amet.</p>
+            <p >Lorem ipsum dolor sit amet.</p>
+            <p >Lorem ipsum dolor sit amet.</p>
+        </form>
+    </div>
+    <form name="form_btn" class="form_btn">
+
+        <input  name="btn_edit" class="edit"  type="button" value="Edit">
+        <input  name="btn_style" class="style" type="button" value="Style">
+    </form>
+    <div class="block_input">
+        <form name="form_input" class="form_input"  >
+            <textarea name="redactor" id="area" cols="30" rows="10">fgcgfc</textarea>
+            <div class="block_btn">
+                <input type="button" name="btn_add" class="add" value="ADD">
+                <input type="button" name="btn_save" class="save" value="SAVE">
+            </div>
+        </form>
+    </div>
+    <div class="block_style">
+        <form name="form_style" class="form_style" >
+            <p>Font Size:</p>
+            <input type="radio"  value="12px" name="font_size" class="font_size" >12px
+            <input type="radio"  value="14px" name="font_size" class="font_size" >14px
+            <input type="radio"  value="16px" name="font_size" class="font_size" >16px
+            <input type="radio"  value="18px" name="font_size" class="font_size" >18px
+            <input type="radio"  value="20px" name="font_size" class="font_size" >20px
+            <p>Font Famile:</p>
+            <select name="sel_font" id="sel_font">
+                <option value="Choose option">Choose option</option>
+                <option value="Cursive">Cursive</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Monospace">Monospace</option>
+                <option value="Sans-serif">Sans-serif</option>
+            </select>
+            <p>Colors:</p>
+            <input type="button" name="btn_colorText"  class="colorT" value="Color of Text">
+            <input type="button" name="btn_background" class="colorBack"value="Background">
+            <p>Style:</p>
+            <input type="checkbox" name="bold_text" id="" value="Bold">Bold Text    
+            <input type="checkbox" name="cursiv_text" id="" value="Italic">Cursive Text
+        </form>
+        <div class="box_color">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </div>
+        <div class="box_back">
+            <div class="color2"></div>
+            <div class="color2"></div>
+            <div class="color2"></div>
+            <div class="color2"></div>
+            <div class="color2"></div>
+            <div class="color2"></div>
+            <div class="color2"></div>
+            <div class="color2"></div>
+            <div class="color2"></div>
+        </div>
+    </div>
+
+    <div class="block_choose">
+        <form name="table_list" class="table_list">
+            <h3>Choose what you want:</h3>
+            <input type="radio" name="tbl" value="table"> table
+            <input type="radio" name="tbl" value="list"> list
+        </form>
+        
+        <form name="table_bl" class="table_bl">
+            <div class="tr_td">
+                <p>Count TR:</p>
+                <div class="input_s"><input type="text" name="inp_tr" class="inp" placeholder="Count TR:" ></div>
+                <p>Count TD:</p>
+                <div class="input_s"><input type="text" name="inp_td" class="inp" placeholder="Count TD:" ></div>
+            </div>
+            <h3>Add style to your table:</h3>
+            <div class="size_td">
+                <p>Width TD:</p>
+                <div class="input_s"><input type="text" name="Width" class="inp" placeholder="Width TD:"></div>
+                <p>Height TD:</p>
+                <div class="input_s"><input type="text" name="Height" class="inp" placeholder="Height TD:"></div>
+            </div>
+            <div class="border_style">
+                <p>Width of border:</p> <div class="input_border"><input type="text" name="Width_border" class="border_inp" placeholder="Width:"></div>
+                <p>Type of border:</p>
+                <div class="input_border">  
+                    <select name="type_border" id="" class="border_inp">
+                        <option value="solid">solid</option>
+                        <option value="dashed">dashed</option>
+                        <option value="ridge">ridge</option>
+                        <option value="double">double</option>
+                    </select>
+                </div>
+                <p> Color of border:</p>
+                <div class="input_border"> 
+                    <select name="color_border" id="" class="border_inp">
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+                        <option value="black">black</option>
+                        <option value="blue">blue</option>
+                        <option value="white">white</option>
+                    </select>
+                </div>
+            </div>
+            <input type="button" name="create_btn" class="create_btn" value="Create table">
+        </form>
+        
+        <form name="list" class="list_bl">
+            <div class="style_list">
+                <p>Count Li:</p>
+                <div class="input_list"><input type="text" name="count_li" class="inp_li" placeholder="Count Li:"></div>
+                <p>Type of Marks:</p>
+                <div class="input_list">
+                    <select name="marks" id="" class="inp_li">
+                        <option value="circle">circle</option>
+                        <option value="disc">disc</option>
+                        <option value="square">square</option>
+                    </select>
+                </div>
+            </div>
+            <input type="button" name="list_btn" class="create_list" value="Create list">
+        </form>
+    </div>
+    <div class="body">
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

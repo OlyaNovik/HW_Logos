@@ -1,0 +1,326 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marg_text {
+  min-width: 800px;
+  min-height: 300px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #d8e3f1;
+  border: 1px solid #8f8e8e;
+  border-radius: 7px;
+  margin: 30px 0 20px 0;
+}
+
+.marg_text .form_text {
+  font-family: monospace;
+  margin: 20px 0 20px 40px;
+}
+
+.form_btn {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form_btn .edit {
+  width: 100px;
+  height: 30px;
+  background-color: #f7dc55;
+  color: #201f1f;
+  border: 0;
+  border-radius: 7px;
+}
+
+.form_btn .style {
+  width: 100px;
+  height: 30px;
+  background-color: #77a8f1;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+}
+
+.block_input {
+  width: 800px;
+  height: 300px;
+  background-color: #d8e3f1;
+  border: 1px solid #8f8e8e;
+  border-radius: 7px;
+  margin: 30px 0 20px 0;
+}
+
+.block_input .form_input {
+  display: none;
+}
+
+.block_input .form_input #area {
+  margin: 20px 0 0 20px;
+  width: 750px;
+  height: 150px;
+  border-radius: 10px;
+  border: 0;
+}
+
+.block_input .form_input #area:focus {
+  outline: 2px solid #55acf9;
+}
+
+.block_input .form_input .block_btn {
+  margin: 20px 0 0 20px;
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block_input .form_input .block_btn .add {
+  width: 100px;
+  height: 30px;
+  background-color: #e64911;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+}
+
+.block_input .form_input .block_btn .save {
+  width: 100px;
+  height: 30px;
+  background-color: #419a41;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+}
+
+.block_style {
+  display: none;
+  width: 800px;
+  height: 300px;
+  background-color: #d8e3f1;
+  border: 1px solid #8f8e8e;
+  border-radius: 7px;
+  margin: 30px 0 20px 0;
+}
+
+.block_style .form_style {
+  margin: 7px 0 20px 20px;
+}
+
+.block_style .form_style .colorT {
+  width: 100px;
+  height: 30px;
+  background-color: gray;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+}
+
+.block_style .form_style .colorBack {
+  width: 100px;
+  height: 30px;
+  background-color: gray;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+}
+
+.block_style .box_color {
+  display: none;
+  margin: 50px 0 0 200px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  outline: 2px solid darkgray;
+  width: 150px;
+  height: 150px;
+}
+
+.block_style .box_color .color {
+  outline: 0.5px solid #bebcbc;
+  width: 50px;
+  height: 50px;
+}
+
+.block_style .box_back {
+  display: none;
+  margin: 50px 0 0 200px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  outline: 2px solid darkgray;
+  width: 150px;
+  height: 150px;
+}
+
+.block_style .box_back .color2 {
+  outline: 0.5px solid #bebcbc;
+  width: 50px;
+  height: 50px;
+}
+
+.block_choose {
+  display: none;
+  width: 800px;
+  height: 300px;
+  background-color: #d8e3f1;
+  border: 1px solid #8f8e8e;
+  border-radius: 7px;
+  margin: 30px 0 20px 0;
+  padding: 15px 0 0 30px;
+  width: 800px;
+  height: 450px;
+}
+
+.block_choose input {
+  margin: 0 15px 0 15px;
+}
+
+.block_choose .table_bl {
+  display: none;
+}
+
+.block_choose .table_bl .tr_td {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 700px;
+      grid-template-columns: 100px 700px;
+  -ms-grid-rows: 50px 50px;
+      grid-template-rows: 50px 50px;
+}
+
+.block_choose .table_bl .size_td {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 700px;
+      grid-template-columns: 100px 700px;
+  -ms-grid-rows: 50px 50px;
+      grid-template-rows: 50px 50px;
+}
+
+.block_choose .table_bl .input_s {
+  margin: 0 0 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block_choose .table_bl .input_s .inp {
+  width: 650px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.block_choose .table_bl .border_style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block_choose .table_bl .input_border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block_choose .table_bl .input_border .border_inp {
+  width: 125px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 0 15px 0 20px;
+}
+
+.block_choose .table_bl .create_btn {
+  margin: 15px 0 0 0;
+  width: 100px;
+  height: 30px;
+  background-color: green;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+}
+
+.list_bl {
+  display: none;
+}
+
+.list_bl .style_list {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 700px;
+      grid-template-columns: 100px 700px;
+  -ms-grid-rows: 50px 50px;
+      grid-template-rows: 50px 50px;
+}
+
+.list_bl .style_list .input_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list_bl .style_list .inp_li {
+  width: 650px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.list_bl .create_list {
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: green;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+}
+
+.body {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

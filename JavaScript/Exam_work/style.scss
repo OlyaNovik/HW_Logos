@@ -1,0 +1,208 @@
+
+@mixin block {
+    width: 800px;
+    height: 300px;
+    background-color: rgb(216, 227, 241);
+    border: 1px solid rgb(143, 142, 142);
+    border-radius: 7px;
+    margin: 30px 0 20px 0;
+}
+@mixin btn($color,$color_text) {
+    width: 100px;
+    height: 30px;
+    background-color: $color;
+    color:$color_text;
+    border: 0;
+    border-radius: 7px;
+}
+@mixin input_stl {
+    width: 650px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+@mixin input_border{
+    width: 125px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+} 
+@mixin boxStyle {
+    display: none;
+    margin: 50px 0 0 200px;
+    grid-template-columns:  1fr 1fr 1fr;
+    outline: 2px solid darkgray;
+    width: 150px;
+    height: 150px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marg_text{
+    min-width: 800px;
+    min-height: 300px;
+    width: fit-content;
+    background-color: rgb(216, 227, 241);
+    border: 1px solid rgb(143, 142, 142);
+    border-radius: 7px;
+    margin: 30px 0 20px 0;
+        .form_text{
+        font-family: monospace;
+        margin: 20px 0 20px 40px;
+        }
+}
+
+.form_btn{
+    width: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+         .edit{
+            @include btn(rgb(247, 220, 85),rgb(32, 31, 31));
+        }
+         .style{
+            @include btn(rgb(119, 168, 241),white);
+     }
+}
+
+.block_input{
+    @include block();
+    .form_input{
+        display: none;
+        #area{
+            margin:20px 0 0 20px;
+            width: 750px;
+            height: 150px;
+            border-radius: 10px;
+            border: 0;
+        }
+        #area:focus{
+            outline: 2px solid rgb(85, 172, 249);
+        }
+        .block_btn{
+            margin:20px 0 0 20px;
+            width:230px ;
+            display: flex;
+            justify-content: space-between;
+                .add{
+                    @include btn(rgb(230, 73, 17),white );
+                 }
+                .save{
+                 @include btn(rgb(65, 154, 65),white );
+                 }   
+        }
+    }
+}
+
+.block_style{
+    display: none;
+    @include block();
+   .form_style{
+        margin: 7px 0 20px 20px;
+            .colorT{
+                @include btn(gray,white);
+            }
+             .colorBack{
+                @include btn(gray,white );
+            }
+       
+   }
+   .box_color{
+         @include boxStyle();
+            .color{
+                outline: 0.5px solid rgb(190, 188, 188);
+                width: 50px;
+                height: 50px;
+             }
+    }
+    .box_back{
+        @include boxStyle();
+             .color2{
+                outline: 0.5px solid rgb(190, 188, 188);
+                width: 50px;
+                height: 50px;
+             }
+    }
+}
+
+.block_choose{
+    display: none;
+    @include block();
+    padding: 15px 0 0 30px;
+    width: 800px;
+    height: 450px;
+        input{
+            margin: 0 15px 0 15px;
+        }
+        .table_bl{
+            display: none;
+                .tr_td{
+                    display: grid;
+                    grid-template-columns: 100px 700px;
+                    grid-template-rows: 50px 50px;
+        
+                }
+                .size_td{
+                    display: grid;
+                    grid-template-columns: 100px 700px;
+                    grid-template-rows: 50px 50px;
+                 }
+                .input_s{
+                    .inp{
+                          @include input_stl();
+                         }            
+                    margin: 0 0 0 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                 }
+                 .border_style{
+                    display: flex;
+                }
+                .input_border{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                     .border_inp{
+                         @include input_border();
+                         margin: 0 15px 0 20px;
+                    }
+                 }
+                .create_btn{
+                     margin: 15px 0 0 0;
+                    @include btn(green,white);
+                }
+        }
+}
+
+.list_bl{
+    display: none;
+        .style_list{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 100px 700px;
+            grid-template-rows: 50px 50px;
+            .input_list{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+             }
+            .inp_li{
+                @include input_stl();
+                margin: 0;
+            } 
+        }
+        .create_list{
+            margin-top: 20px;
+            @include btn(green,white );
+        }       
+    
+}
+
+.body{
+    display: none;
+}
