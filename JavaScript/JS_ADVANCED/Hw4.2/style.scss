@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(205, 205, 205);
+}
+@mixin input {
+    padding: 10px;
+    border: 0;
+    border-radius:7px;
+    width: 400px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+// @mixin button($color) {
+//     border: none;
+//     color: white;
+//     width: 420px;
+//     height: 40px;
+//     border-radius: 7px;
+//     background-color:$color;
+// }
+.Sign{
+    padding: 30px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    input{
+        @include input();
+    }
+    input:focus{
+        outline: 0;
+        box-shadow: rgba(0, 174, 255, 0.414) 0px 0px 0px 4px;
+        // box-shadow: rgba(23, 119, 237, 0.25) 0px 54px 55px, rgba(23, 119, 237, 0.25) 0px -12px 30px, rgba(23, 119, 237, 0.25) 0px 4px 6px, rgba(23, 119, 237, 0.25) 0px 12px 13px, rgba(23, 119, 237, 0.25) 0px -3px 5px;
+        // box-shadow: -5px 3px 3px -5px rgba(23, 119, 237, 0.826);
+    }
+}
+.link{
+    margin-top: 5px;
+    align-self: flex-start;
+}
+a{
+    text-decoration: none;
+}
+.btn_signUp{
+    background-color: rgb(32, 102, 231);
+    color: white;
+}
+
+.btn_signIn{
+    background-color: rgb(27, 137, 39);
+    color: white;
+}
+.In{
+    display: none;
+}
+.clear{
+    @include input();
+    margin-left: 500px;
+    width: 150px;
+    color: white;
+    background-color: orange;
+}

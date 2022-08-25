@@ -1,0 +1,92 @@
+body{
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(136, 135, 135, 0.789);
+}
+@mixin block($pos) {
+    display: flex;
+    text-align: center;
+    justify-content: $pos;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+    
+}
+p{
+    font-size: 25px;
+}
+$color:rgb(14, 148, 97);
+.notebook{
+    width: 1200px;
+    height: 800px;
+    border: 25px solid $color ;
+    border-radius: 35px;
+    outline: 1px solid white;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 595px 10px 595px;
+    position: relative;
+        .line{
+            background: $color ;
+        }
+
+            .list{
+                /* width: 590px; */
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                margin-top: 20px;
+                    .text{
+                       @include block(center);
+                    }
+
+                    .inp{
+                        margin-left: 20px;
+                        @include block(flex-start);
+                        .check{
+                            width: 40px;
+                            height: 20px;
+                        }
+                    }
+
+            }
+         .exercise{
+            // margin-top: 20px;
+            @include block(center);
+            height: 600px;
+            flex-direction: column;
+                .inp_enter{
+                    margin-top: 30px;
+                    width: 200px;
+                    border: none;
+                    border-bottom: 3px solid black;
+                }
+                .inp_enter:focus{
+                    outline: none;
+                }
+                .add_btn{
+                    width: 120px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 7px;
+                    background-color: $color;
+                    color: white;
+                    margin-top: 50px;
+                }
+         }   
+         .warning{
+             display: none;
+             transition: 3s;
+             width:1000px;
+             height: 120px;
+             background-color: rgb(238, 149, 126);
+             border-radius: 10px;
+             padding: 10px 0 0 20px;
+             color: rgb(162, 32, 0);
+             position: absolute;
+             top: 250px;
+             left: 100px;
+         }
+}

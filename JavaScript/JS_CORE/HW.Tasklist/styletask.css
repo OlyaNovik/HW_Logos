@@ -1,0 +1,139 @@
+body {
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(136, 135, 135, 0.789);
+}
+
+p {
+  font-size: 25px;
+}
+
+.notebook {
+  width: 1200px;
+  height: 800px;
+  border: 25px solid #0e9461;
+  border-radius: 35px;
+  outline: 1px solid white;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 595px 10px 595px;
+      grid-template-columns: 595px 10px 595px;
+  position: relative;
+}
+
+.notebook .line {
+  background: #0e9461;
+}
+
+.notebook .list {
+  /* width: 590px; */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+
+.notebook .list .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 50px;
+}
+
+.notebook .list .inp {
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 50px;
+}
+
+.notebook .list .inp .check {
+  width: 40px;
+  height: 20px;
+}
+
+.notebook .exercise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 50px;
+  height: 600px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.notebook .exercise .inp_enter {
+  margin-top: 30px;
+  width: 200px;
+  border: none;
+  border-bottom: 3px solid black;
+}
+
+.notebook .exercise .inp_enter:focus {
+  outline: none;
+}
+
+.notebook .exercise .add_btn {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  background-color: #0e9461;
+  color: white;
+  margin-top: 50px;
+}
+
+.notebook .warning {
+  display: none;
+  -webkit-transition: 3s;
+  transition: 3s;
+  width: 1000px;
+  height: 120px;
+  background-color: #ee957e;
+  border-radius: 10px;
+  padding: 10px 0 0 20px;
+  color: #a22000;
+  position: absolute;
+  top: 250px;
+  left: 100px;
+}
+/*# sourceMappingURL=styletask.css.map */

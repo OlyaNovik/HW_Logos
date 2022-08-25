@@ -1,0 +1,83 @@
+body {
+  margin: 100px 0 0 400px;
+}
+
+p {
+  margin: 0;
+}
+
+.word {
+  width: 400px;
+  height: 30px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid #a2a0a0;
+}
+
+.word:focus {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 100, 214, 0.453) 0px 0px 0px 3px;
+          box-shadow: rgba(0, 100, 214, 0.453) 0px 0px 0px 3px;
+}
+
+.area {
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.area:focus {
+  -webkit-box-shadow: rgba(0, 100, 214, 0.453) 0px 0px 0px 3px;
+          box-shadow: rgba(0, 100, 214, 0.453) 0px 0px 0px 3px;
+  border: none;
+  outline: none;
+}
+
+.formWords {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  outline: 2px solid gray;
+  width: 600px;
+  padding: 10px;
+}
+
+.add {
+  color: white;
+  background-color: #f2b23d;
+  width: 90px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset {
+  color: white;
+  background-color: #e74545;
+  width: 90px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cenzor {
+  color: white;
+  background-color: #57a657;
+  width: 600px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

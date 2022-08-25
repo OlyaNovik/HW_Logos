@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #410e9a;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.main_clock {
+  width: auto;
+  height: 220px;
+  border: 1px solid #d3cece;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stopwatch {
+  width: auto;
+  height: 220px;
+  border: 1px solid #d3cece;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.time {
+  text-align: center;
+}
+
+.time .start {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #d3cece;
+  background: #410e9a;
+  color: black;
+  cursor: pointer;
+}
+
+.time .loop {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #d3cece;
+  background: #410e9a;
+  color: black;
+  cursor: pointer;
+}
+
+.time .stop {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #d3cece;
+  background: #410e9a;
+  color: black;
+  cursor: pointer;
+}
+
+.time .reset {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #d3cece;
+  background: #410e9a;
+  color: black;
+  cursor: pointer;
+}
+
+.taimer {
+  width: auto;
+  height: 220px;
+  border: 1px solid #d3cece;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.setTime {
+  text-align: center;
+}
+
+.setTime .plus {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #d3cece;
+  background: #410e9a;
+  color: black;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.setTime .minus {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #d3cece;
+  background: #410e9a;
+  color: black;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.area {
+  width: 400px;
+  height: 180px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+  background-color: #410e9a;
+  outline: 2px solid #d3cece;
+}
+
+.mini_text {
+  font-size: 30px;
+}
+
+.big_text {
+  font-size: 80px;
+}
+
+.seconds {
+  font-size: 70px;
+}
+
+.timer_set {
+  font-size: 80px;
+}
+
+.timer_text {
+  font-size: 80px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+body {
+  background-color: #c9c5c5;
+  margin: 200px 0 0 500px;
+}
+
+.input_change {
+  width: 400px;
+}
+
+.form_sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */

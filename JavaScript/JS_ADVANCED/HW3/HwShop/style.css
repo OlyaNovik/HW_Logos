@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    gap: 50px;
+}
+.container {
+    margin-top: 200px;
+    background-color: rgb(232, 230, 230);
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+}
+.container.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container1__form input {
+    width: 250px;   
+    height: 30px;
+    padding: 0px 5px ;
+    margin-top: 5px;
+}
+.TXT {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    width: 250px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#Beer_radio, #Wine_radio ,#Pepsi_radio  {
+    margin-right:7px;
+}
+.button {
+    width: 60px;
+    height: 30px;
+}
+#amount {
+    width: 250px;   
+    height: 30px;
+    padding: 0px 5px ;
+    margin-top: 5px;
+} 
+.container.two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goods__select {
+    margin: 10px 0px;
+}
+.container.three {
+    padding: 40px 30px ;
+}
+.textarea {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+}

@@ -1,0 +1,104 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 211, 211);
+}
+@mixin input {
+width: 386px;
+height: 35px;
+border: 1px solid rgb(161, 159, 159);
+border-radius: 7px;
+}
+@mixin krest($top,$right) {
+    color: red;
+    position:absolute;
+    right: $top;
+    top: $right;
+
+    
+}
+.wrraper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input{
+            padding-left: 10px;
+            margin: 2px 0 15px 0;
+        }
+      
+        .field{
+            @include input();
+        }
+        .field:focus{
+            outline: 2px solid rgb(70, 70, 227);
+        }
+        .btn{
+            width: 410px;
+            height: 35px;
+            border: none;
+            background-color: rgb(70, 70, 227);
+            border-radius: 7px;
+            color: white;
+            cursor: pointer;
+        }
+        #f1{
+            position: relative;
+        }
+        #f2{
+            position: relative;
+        }
+        #f3{
+            position: relative;
+        }
+        #f4{
+            position: relative;
+        }
+        #f5{
+            position: relative;
+        }
+        #n1{
+            @include krest(540px,180px);
+
+        }
+        #n2{
+            @include krest(540px,290px);
+
+        }
+        #n3{
+            @include krest(540px,405px);
+
+        }
+        #n4{
+            @include krest(540px,520px);
+
+        }
+        #n5{
+            @include krest(540px,630px);
+
+        }
+
+    }
+
+}
+.warn{
+    display: none;
+    padding-left: 15px;
+    width: 230px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: rgb(163, 9, 9);
+    color: white;
+    margin: 0px 0 25px 0;
+}
+

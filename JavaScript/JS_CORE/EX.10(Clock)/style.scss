@@ -1,0 +1,106 @@
+$border-color:rgb(211, 206, 206);
+$back-color:rgb(65, 14, 154);
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $back-color;
+}
+h2{
+    margin: 0;
+    margin-bottom:5px;
+}
+
+@mixin block {
+    width: auto;
+    height: 220px;
+    border: 1px solid $border-color;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin btn {
+    width: 100px;
+    height: 40px;
+    border: 1px solid $border-color;
+    background: $back-color;
+    color: black;
+    cursor: pointer;
+}
+
+p{
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main_clock{
+    @include block();
+}
+
+.stopwatch{
+    @include block();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.time{
+    text-align: center;
+    .start{
+        @include btn();
+    }
+    .loop{
+        @include btn();
+    }
+    .stop{
+        @include btn();
+    }
+    .reset{
+        @include btn();
+    }
+}
+.taimer{
+    @include block();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.setTime{
+    text-align: center;
+    .plus{
+        @include btn();
+        width: 40px;
+        height: 40px;
+
+    }
+    .minus{
+        @include btn();
+        width: 40px;
+        height: 40px;   
+    }
+}
+.area{
+    width: 400px;
+    height: 180px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    background-color: $back-color;
+    outline: 2px solid $border-color;
+}
+.mini_text{
+    font-size: 30px;
+}
+.big_text{
+    font-size: 80px;
+}
+.seconds{
+    font-size: 70px;
+}
+.timer_set{
+    font-size: 80px;
+}
+.timer_text{
+    font-size: 80px;
+}

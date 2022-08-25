@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+@mixin button {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px; 
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+
+@mixin gridAlign {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+@mixin left-border {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;  
+}
+@mixin right-border {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-right: 20px; 
+}
+@mixin colorOFbox {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 7px;
+}
+@mixin input($width) {
+  padding-left: 10px;
+  width: $width;
+  height: 35px;
+  border: 2px solid rgb(162, 160, 160);
+  border-radius: 7px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    background-color: #7575bf;
+    outline: 2px solid #6464a2;
+}
+
+button:hover {
+    background-color: #b8b5b5;
+    color: white;
+}
+  
+.bbtn {
+    @include button();
+    border-radius: 0;
+    border: 0; 
+         img {
+            width: 20px;
+            height: 20px;
+        }
+}
+  
+.Cr {
+  border-radius: 7px;
+  margin-right: 20px;
+}
+
+.B {
+  @include left-border();
+}
+
+.S {
+    @include right-border();
+
+}
+
+.st_text {
+    @include left-border();
+}
+
+.end_text {
+    @include right-border();
+}
+
+.font-family {
+  background-color: white;
+  color: black;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 0;
+}
+
+.font-family:hover {
+  background-color: #b8b5b5;
+}
+
+
+.paint {
+  @include button();
+  border: none;
+  border-radius: 0;
+  background-color: white;
+    img {
+        width: 20px;
+         height: 20px;
+    }
+}
+
+.paint:hover {
+  background-color: #b8b5b5;
+}
+
+.paint:focus {
+  background-color: white;
+  outline: none;
+}
+
+
+
+.sign_form {
+  border-radius: 7px;
+}
+
+.left_p {
+  @include left-border();
+}
+
+.right_p {
+    @include right-border();
+}
+
+
+.modal-body {
+    @include gridAlign();
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.m1{
+    @include gridAlign();
+    justify-content: center;
+    align-items: center;
+}  
+
+
+.color_box {
+ @include colorOFbox();
+}
+
+.color_box2{
+  @include colorOFbox();
+
+}
+
+.change_wi {
+  width: 600px;
+  height: fit-content;
+}
+
+#text_ar {
+  width: 1400px;
+  height: 600px;
+  border: none;
+  resize: none;
+  padding: 50px 0 0 100px;
+  line-height: 50px;
+}
+
+#text_ar:focus {
+  outline: none;
+}
+
+.one {
+  font-family: Arial, Helvetica, sans-serif
+}
+.two {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.three {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.four {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.five {
+  font-family: 'Times New Roman', Times, serif;
+}
+.six {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.select__group {
+  display: flex;
+  gap: 10px;
+}
+.nav.nav-tabs {
+  width: 100%;
+}
+.img_back{
+  width: 170px;
+  height: 80px;
+  border-radius: 7px;
+}
+.m2{
+  // @include gridAlign();
+  display: none;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.m3{
+  display: none;
+  width: 100%;
+}
+.modal-title{
+  margin-left: 200px;
+}
+.m4 {
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+.input {
+  width: 450px;
+  height: 55px;
+}
+.signIn {
+  width: 450px;
+  height: 35px;
+  background-color:   #7575bf;
+  border: none;
+}
+.main_block{
+  // background-image: url(img/1.jpg);
+  background:local;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.error_empt{
+  display: none;
+  margin: 0;
+  margin-left: 10px;
+  color: red;
+  align-self: flex-start ;
+
+}
+.error{
+  display: none;
+  margin: 0;
+  margin-left: 10px;
+  color: red;
+  align-self: flex-start ;
+}
+
+#edit_text{
+  padding: 20px 0 0 20px;
+  border: none;
+  display: none;
+  width: 1480px;
+  height: 600px;
+}
+#edit_text:focus{
+  outline: none;
+}
+
+.Save-btn{
+  @include button();
+  @include left-border();
+  display: none;
+  border: none;
+  background-color: white;
+  // border-radius:7px;
+  img {
+    width: 30px;
+     height: 30px;
+}
+}
+
+
+.table-btn{
+  @include button();
+  display: none;
+  background-color: white;
+  img {
+    width: 30px;
+    height: 30px;
+}
+}
+.style_btn:hover{
+  border: none;
+    outline: none;
+    background-color: #b8b5b5;
+}
+.style_btn:focus{
+  border: none;
+  outline: none;
+  background-color: white;
+  box-shadow: none;
+}
+.ListOL-btn{
+  @include button();
+  display: none;
+  border: none;
+  background-color: white;
+  img {
+    width: 30px;
+    height: 30px;
+}
+}
+.ListUL-btn{
+  @include button();
+  @include right-border();
+  display: none;
+  border: none;
+  margin: 0;
+  background-color: white;
+  img {
+    width: 30px;
+    height: 30px;
+}
+}
+.cont_tab{
+  display: flex;
+
+}
+
+.table_mod{
+  width: 800px;
+  height: fit-content;
+}
+.global_table{
+  width: 800px;
+  height: 645px;
+  
+}
+
+@media (min-width: 576px){
+.modal-dialog.global_table {
+  max-width: 800px;
+}}
+
+.m5{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 25px;
+  .cl1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .cl2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+  .cl3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .cl4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+
+
+}
+.set_butt{
+width: 220px;
+height: 35px;
+margin: 15px 0px 10px 5px;
+float: left;
+}
+
+.m6{
+  display: block;
+    input{
+      margin-bottom: 10px;
+    }
+}
+.m7{
+  display: block;
+  input{
+    margin-bottom: 10px;
+  }
+}
+
+.body{
+  display: none;
+}
+.reset-btn-table{
+  margin-left: 26px;
+  width: 370px;
+  height: 35px;
+}
+.create-btn-table{
+  width: 370px;
+  height: 35px;
+}
+.empt_tabl{
+  margin-left: 20px;
+  color: red;
+  display: none;
+}
+.empt_ol{
+  margin-left: 20px;
+  color: red;
+  display: none;
+}
+.empt_ul{
+  margin-left: 20px;
+  color: red;
+  display: none;
+}
+// .modal.fade.modal_sign_out{
+//   display: none !important;
+// }
+.out-modal{
+  display: none;
+  // opacity:unset;
+}
+.m4-out{
+  display: flex;
+  gap: 10px;
+  button{
+    width: 200px;
+  }
+}

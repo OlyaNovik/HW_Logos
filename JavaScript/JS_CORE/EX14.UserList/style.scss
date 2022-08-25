@@ -1,0 +1,81 @@
+body{
+    padding: 50px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+p{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+@mixin btn($color,$back) {
+    width:60px;
+    height: 35px;
+    color: $color;
+    background-color: $back;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    
+}
+.wrraper_right{
+    display: flex;
+    flex-direction: column;
+    input{
+        width: 500px;
+        height: 30px;
+        border: 2px solid gray;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+    input:focus{
+        border: 1px;
+        outline: 2px solid blue;
+    }
+    .btn_add{
+        margin-top: 15px;
+        width: 100px;
+        height: 35px;
+        border: 2px solid green;
+        color: green;
+        cursor: pointer;
+    }
+    .edd{
+        display: none;
+    }
+    .btn_add:focus{
+        border: 1px;
+        outline: 2px solid rgb(4, 161, 4);
+    }
+}
+
+.table{
+        border-top: 2px solid rgb(160, 159, 159);
+        border-bottom: 2px solid rgb(160, 159, 159);
+        border-collapse:collapse;
+        th{
+            width: 100px;
+            height: 40px;
+        }
+        tr{
+            border-top: 2px solid gray;
+            width: 500px;
+            height: 60px;
+        }
+        .td{
+            
+            border-top: 2px solid rgb(160, 159, 159);
+            text-align: center;
+            min-width: 100px;
+            width: fit-content;
+            height: 40px;
+        }
+        .edit{
+            @include btn(black,rgb(239, 135, 7));
+        }
+        .dele{
+            @include btn(white,rgb(211, 62, 24));
+        }
+}
